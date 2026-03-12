@@ -1,10 +1,4 @@
 /**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
-
-/**
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
@@ -21,9 +15,9 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-source-contenful`,
+      resolve: `gatsby-source-contentful`,
       options: {
-        spaceID: `n9lhcuzvq3wh`,
+        spaceId: `n9lhcuzvq3wh`,
         accessToken: `ZpEsCB4ex1nPhQHIC5OM3hChkbuix1hpvL28jXQ0Rws`,
       },
     },
