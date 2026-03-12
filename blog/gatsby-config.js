@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+})
+
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
@@ -17,8 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `n9lhcuzvq3wh`,
-        accessToken: `ZpEsCB4ex1nPhQHIC5OM3hChkbuix1hpvL28jXQ0Rws`,
+        spaceId: `${process.env.SPACE_ID}`,
+        accessToken: `${process.env.ACCESS_TOKEN}`,
       },
     },
     `gatsby-plugin-image`,
@@ -29,6 +33,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
