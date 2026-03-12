@@ -60,7 +60,7 @@
     - --color-contrast: #ffffff;
     - --color-code-bg: #ffffff;
 
-## All GraphGL Queries:
+## All GraphQL Queries:
 
     - In about.js and contact.js:
     query MyQuery {
